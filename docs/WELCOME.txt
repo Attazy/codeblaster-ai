@@ -1,0 +1,59 @@
+╔════════════════════════════════════════════════════════════════╗
+║                                                                ║
+║            🚀 WELCOME TO CODEBLASTER AI 🚀                    ║
+║                                                                ║
+║        AI-Powered Code Review Tool - Enterprise Edition        ║
+║                                                                ║
+╚════════════════════════════════════════════════════════════════╝
+
+📖 QUICK START FOR BEGINNERS:
+
+    ./run.sh
+
+    That's it! Interactive menu akan muncul.
+    Pilih dari menu dengan ketik nomor (1-14).
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 DOCUMENTATION:
+
+    START_HERE.md      - Quick guide for beginners (BACA INI!)
+    CARA_PAKAI.md      - Tutorial lengkap (Bahasa Indonesia)
+    README.md          - Full documentation (English)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 FEATURES:
+
+    ✨ Multi-Language Support (20+ languages)
+    🤖 Multi-AI Consensus (GPT-4 + Claude + Llama)
+    🔒 Security & CVE Scanning
+    🏗️  Architecture Analysis
+    🖥️  Web Dashboard with Real-time Updates
+    📊 HTML Reports
+    ⚡ Git Integration
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 CONFUSED ABOUT MODULES?
+
+    Don't worry! You don't need to understand the module structure.
+    
+    Just run: ./run.sh
+    
+    Everything is handled automatically! 🎯
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔑 FIRST TIME SETUP:
+
+    1. Run: ./run.sh
+    2. Choose option: 9 (Setup API Keys)
+    3. Pick AI provider and enter key
+    4. Done! Now analyze your code!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Need help? Read START_HERE.md or run: ./run.sh (option 14)
+
+Happy Coding! 🚀

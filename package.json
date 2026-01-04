@@ -1,0 +1,52 @@
+{
+  "name": "codeblaster-ai",
+  "version": "1.0.0",
+  "description": "Advanced AI-Powered Code Review Assistant with Multi-Language Support, Web Dashboard, and Enterprise Features",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "packages/web-dashboard/*"
+  ],
+  "scripts": {
+    "install:all": "npm install --legacy-peer-deps && npm run bootstrap",
+    "bootstrap": "npm install --workspaces --legacy-peer-deps",
+    "build": "npm run build --workspaces",
+    "build:cli": "npm run build -w packages/cli",
+    "build:core": "npm run build -w packages/core",
+    "build:backend": "npm run build -w packages/web-dashboard/backend",
+    "build:frontend": "npm run build -w packages/web-dashboard/frontend",
+    "dev:cli": "npm run dev -w packages/cli",
+    "dev:backend": "npm run dev -w packages/web-dashboard/backend",
+    "dev:frontend": "npm run dev -w packages/web-dashboard/frontend",
+    "test": "npm run test --workspaces",
+    "lint": "eslint . --ext .ts,.tsx",
+    "format": "prettier --write \"**/*.{ts,tsx,json,md}\"",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "code-review",
+    "ai",
+    "static-analysis",
+    "linter",
+    "code-quality",
+    "github-actions",
+    "llm",
+    "devtools"
+  ],
+  "author": "attazy",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/uuid": "^10.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.54.0",
+    "husky": "^8.0.3",
+    "prettier": "^3.1.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}

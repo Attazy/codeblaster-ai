@@ -1,0 +1,50 @@
+{
+  "version": "1.0.0",
+  "ai": {
+    "provider": "openai",
+    "model": "gpt-4-turbo-preview",
+    "temperature": 0.3,
+    "maxTokens": 2000
+  },
+  "analysis": {
+    "severity": "warning",
+    "rules": [
+      "security",
+      "performance",
+      "code-quality",
+      "best-practices"
+    ],
+    "parallel": true,
+    "cache": true
+  },
+  "ignore": [
+    "node_modules/**",
+    "dist/**",
+    "build/**",
+    "coverage/**",
+    "*.min.js",
+    "*.min.css",
+    "vendor/**",
+    "public/assets/**"
+  ],
+  "languages": {
+    "javascript": {
+      "enabled": true,
+      "rules": ["no-eval", "sql-injection", "xss-vulnerability"]
+    },
+    "typescript": {
+      "enabled": true,
+      "rules": ["no-eval", "sql-injection", "xss-vulnerability"]
+    },
+    "python": {
+      "enabled": true,
+      "rules": ["sql-injection", "hardcoded-secrets"]
+    }
+  },
+  "reporting": {
+    "format": "console",
+    "outputFile": null,
+    "includeSuggestions": true,
+    "includeConfidence": true
+  }
+}

@@ -1,0 +1,174 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║                  BLASTERS AI - CHEAT SHEET                        ║
+║                     One-Page Reference                            ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+┌───────────────────────────────────────────────────────────────────┐
+│                        🚀 MAIN COMMAND                            │
+│                                                                   │
+│                           ./start                                 │
+│                                                                   │
+│                  (That's all you need!)                           │
+└───────────────────────────────────────────────────────────────────┘
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 MENU REFERENCE
+
+  1  Analyze File          Scan single file
+  2  Analyze Project       Scan entire project
+  3  Git Changes           Scan staged files
+  4  Multi-AI Consensus    3 AI voting system
+  5  Security Audit        Find vulnerabilities
+  6  Code Architecture     Analyze structure
+  7  Generate Report       Create HTML report
+  8  Web Dashboard         Open full UI
+  9  Configure Keys        Setup API keys
+  0  Exit                  Quit program
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚡ QUICK WORKFLOWS
+
+  Before Commit:           ./start → 3 → Review → Commit
+  Security Check:          ./start → 5 → Fix issues
+  Best Accuracy:           ./start → 4 → Get consensus
+  Team Review:             ./start → 7 → Share HTML
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔑 API KEYS (Setup once)
+
+  OpenAI:    https://platform.openai.com/api-keys
+  Anthropic: https://console.anthropic.com/
+  Ollama:    Free! Run: ollama pull codellama
+
+  Setup in menu: ./start → 9
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📁 FILES YOU NEED
+
+  ./start           Main launcher
+  ./run.sh          Alternative launcher
+  START_HERE.md     Beginner guide
+  USAGE.txt         This cheat sheet (expanded)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 COMMON TASKS
+
+  Analyze a file:
+    $ ./start
+    Choose: 1
+    Path: src/app.js
+    
+  Scan project for security:
+    $ ./start
+    Choose: 5
+    
+  Get most accurate results:
+    $ ./start
+    Choose: 4
+    Path: ./src
+    
+  Generate report for team:
+    $ ./start
+    Choose: 7
+    Path: ./
+    
+  Open web interface:
+    $ ./start
+    Choose: 8
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 PRO TIPS
+
+  • Use option 4 for production code (most accurate)
+  • Use option 3 before every commit
+  • Use option 5 weekly for security
+  • Use option 7 for team reviews
+  • Use option 8 for visual analysis
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🆘 TROUBLESHOOTING
+
+  Problem                    Solution
+  ─────────────────────────────────────────────
+  "Not built"                ./quickstart.sh
+  "API key not set"          ./start → 9
+  "Command not found"        chmod +x start
+  Slow analysis              Use option 1 first
+  False positives            Use option 4 (consensus)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ FEATURES SUMMARY
+
+  ✓ 20+ programming languages
+  ✓ Multi-AI consensus (GPT + Claude + Llama)
+  ✓ Security scanning (CVE database)
+  ✓ Architecture analysis
+  ✓ HTML reports with charts
+  ✓ Web dashboard
+  ✓ Git integration
+  ✓ Parallel processing
+  ✓ Smart caching
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 SEVERITY LEVELS
+
+  🔴 CRITICAL    Must fix immediately (security)
+  ❌ ERROR       Should fix (bugs, logic errors)
+  ⚠️  WARNING    Consider fixing (code smells)
+  💡 INFO        Nice to have (suggestions)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎓 LEARNING PATH
+
+  Day 1:   ./start → Try option 1 (single file)
+  Day 2:   Try all options (1-9)
+  Day 3:   Read START_HERE.md
+  Week 1:  Use before every commit (option 3)
+  Week 2:  Setup in CI/CD
+  Month 1: Master all features
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 DOCUMENTATION
+
+  File                 Purpose
+  ──────────────────────────────────────────────
+  START_HERE.md        Beginner guide (5 min)
+  USAGE.txt            Extended usage guide
+  QUICK_SUMMARY.txt    Super quick overview
+  README.md            Full documentation
+  CARA_PAKAI.md        Tutorial (Bahasa Indonesia)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 REMEMBER
+
+  You don't need to:
+    ❌ Understand the module structure
+    ❌ Remember complex commands
+    ❌ Read tons of documentation
+    ❌ Configure multiple things
+  
+  Just run:
+    ✅ ./start
+    ✅ Pick a number
+    ✅ Get results!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+                    Keep this file handy! 📌
+                Print it, save it, bookmark it!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

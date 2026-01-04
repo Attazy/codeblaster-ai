@@ -1,0 +1,45 @@
+name: 'CodeBlaster AI Review'
+description: 'AI-powered code review for pull requests'
+author: 'attazy'
+
+branding:
+  icon: 'check-circle'
+  color: 'purple'
+
+inputs:
+  ai-provider:
+    description: 'AI provider (openai, anthropic, ollama)'
+    required: false
+    default: 'openai'
+  
+  api-key:
+    description: 'API key for AI provider'
+    required: false
+  
+  model:
+    description: 'AI model to use'
+    required: false
+  
+  severity-threshold:
+    description: 'Minimum severity to report (info, warning, error, critical)'
+    required: false
+    default: 'warning'
+  
+  fail-on-issues:
+    description: 'Fail the workflow if issues are found'
+    required: false
+    default: 'true'
+  
+  post-comments:
+    description: 'Post review comments on PR'
+    required: false
+    default: 'true'
+  
+  github-token:
+    description: 'GitHub token for posting comments'
+    required: false
+    default: ${{ github.token }}
+
+runs:
+  using: 'node20'
+  main: 'dist/action.js'

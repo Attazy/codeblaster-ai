@@ -1,0 +1,80 @@
+name: CodeBlaster CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  code-review:
+    runs-on: ubuntu-latest
+    name: AI Code Review
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Run CodeBlaster
+        run: |
+          npx codeblaster review --staged \
+            --ai openai \
+            --severity warning \
+            --format json \
+            --output report.json
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      
+      - name: Upload report
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: codeblaster-report
+          path: report.json
+      
+      - name: Comment PR
+        uses: actions/github-script@v7
+        if: github.event_name == 'pull_request'
+        with:
+          script: |
+            const fs = require('fs');
+            const report = JSON.parse(fs.readFileSync('report.json', 'utf8'));
+            
+            let comment = '## 🚀 CodeBlaster AI Review\n\n';
+            comment += `**Files Analyzed:** ${report.files}\n`;
+            comment += `**Total Issues:** ${report.issues.length}\n\n`;
+            comment += `- 🔴 Critical: ${report.summary.critical}\n`;
+            comment += `- ❌ Errors: ${report.summary.error}\n`;
+            comment += `- ⚠️ Warnings: ${report.summary.warning}\n`;
+            comment += `- ℹ️ Info: ${report.summary.info}\n\n`;
+            
+            if (report.issues.length > 0) {
+              comment += '### Top Issues\n\n';
+              report.issues.slice(0, 5).forEach((issue, i) => {
+                comment += `${i+1}. **${issue.message}**\n`;
+                comment += `   - File: \`${issue.file}:${issue.line}\`\n`;
+                if (issue.suggestion) {
+                  comment += `   - 💡 ${issue.suggestion}\n`;
+                }
+                comment += '\n';
+              });
+            } else {
+              comment += '✅ **No issues found! Great job!**\n';
+            }
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });

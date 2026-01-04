@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# 🚀 Blasters - Ultra Simple Launcher
+
+clear
+
+echo -e "\033[0;36m"
+cat << "EOF"
+
+    ____  __    ___   ___________  ____  _____
+   / __ )/ /   /   | / ___/_  __/ / __ \/ ___/
+  / __  / /   / /| | \__ \ / /   / /_/ /\__ \ 
+ / /_/ / /___/ ___ |___/ // /   / _, _/___/ / 
+/_____/_____/_/  |_/____//_/   /_/ |_|/____/  
+                                               
+           Quick Launcher - v2.0.0
+
+EOF
+echo -e "\033[0m"
+
+# Check if built
+if [ ! -d "packages/cli/dist" ]; then
+    echo "⚠️  First time setup needed..."
+    echo ""
+    read -p "Auto-install everything? (y/n): " setup_choice
+    
+    if [ "$setup_choice" = "y" ] || [ "$setup_choice" = "Y" ]; then
+        echo ""
+        echo "🔧 Installing and building..."
+        ./quickstart.sh
+        echo ""
+        echo "✅ Setup complete!"
+        echo ""
+        read -p "Press ENTER to launch..."
+        ./run.sh
+    else
+        echo ""
+        echo "Run './quickstart.sh' first, then './start'"
+        exit 0
+    fi
+else
+    # Already built, launch menu
+    ./run.sh
+fi
