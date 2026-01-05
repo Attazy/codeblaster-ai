@@ -5,6 +5,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
+[![Windows](https://img.shields.io/badge/Windows-Support-blue.svg)](WINDOWS_SETUP.md)
+[![macOS](https://img.shields.io/badge/macOS-Support-blue.svg)](README.md)
+[![Linux](https://img.shields.io/badge/Linux-Support-blue.svg)](README.md)
 
 ## ✨ Features
 
@@ -17,6 +20,7 @@
 
 ## 🚀 Quick Start
 
+### **Linux/macOS:**
 ```bash
 # Clone repository
 git clone https://github.com/attazy/codeblaster-ai.git
@@ -27,6 +31,19 @@ cd codeblaster-ai
 
 # Launch interactive menu
 ./start
+```
+
+### **Windows:**
+```cmd
+REM Clone repository
+git clone https://github.com/attazy/codeblaster-ai.git
+cd codeblaster-ai
+
+REM Auto install & setup
+quickstart.bat
+
+REM Launch interactive menu
+start.bat
 ```
 
 **Requirements**: Node.js v18+, npm v9+, API key ([OpenAI](https://platform.openai.com/api-keys) / [Anthropic](https://console.anthropic.com/) / [Ollama FREE](https://ollama.com/))
@@ -95,6 +112,7 @@ Files Analyzed: 1 | Total Issues: 5
 
 - **[START_HERE.md](START_HERE.md)** - Quick guide
 - **[CARA_PAKAI.md](CARA_PAKAI.md)** - Tutorial lengkap (Bahasa Indonesia)
+- **[WINDOWS_SETUP.md](WINDOWS_SETUP.md)** - Windows installation guide
 - **[STRUCTURE_GUIDE.md](STRUCTURE_GUIDE.md)** - Architecture guide
 - **[docs/](docs/)** - Advanced docs
 

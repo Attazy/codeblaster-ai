@@ -4,9 +4,16 @@
 
 ### **Interactive Menu - Seperti Storm CLI** 🌟
 
+**Linux/macOS:**
 ```bash
 # Langsung run aja!
 ./run.sh
+```
+
+**Windows:**
+```cmd
+REM Langsung run aja!
+start.bat
 ```
 
 **Menu interaktif akan muncul dengan pilihan:**
@@ -20,6 +27,8 @@
 **TIDAK perlu tahu tentang modules/packages!** Semua sudah otomatis.
 
 Lihat: **START_HERE.md** untuk quick guide dengan contoh.
+
+💡 **Windows users:** Baca **[WINDOWS_SETUP.md](WINDOWS_SETUP.md)** untuk panduan lengkap!
 
 ---
 
